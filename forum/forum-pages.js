@@ -5,6 +5,7 @@ const Poll = require("./poll");
 class Page {
     constructor(title){
         this.title = title;
+        this.posts = [];
     };
     createTextPost(title, date, user, text){
         let post = new Text(title, date, user, text);
